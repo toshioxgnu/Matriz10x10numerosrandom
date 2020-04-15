@@ -26,9 +26,9 @@ namespace Matrices
                 }
             }
             
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < numeros1.GetLength(0) ; i++)
             {
-                for(int  j = 0; j<10; j++)
+                for(int  j = 0; j<numeros1.GetLength(1); j++)
                 {
                     if (numeros1[i,j] == numeros2[i, j])
                     {
@@ -36,9 +36,9 @@ namespace Matrices
                     }
                 }
             }
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < numeros2.GetLength(1); i++)
             {
-                for(int  j = 0; j<10; j++)
+                for(int  j = 0; j<numeros2.GetLength(1); j++)
                 {
                     strMatriz1 = strMatriz1 + numeros1[i, j].ToString() + " ";
                     strMatriz2 =  strMatriz2 + numeros2[i, j].ToString() + " ";
